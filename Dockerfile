@@ -1,4 +1,8 @@
-FROM python:2.7
+FROM python:3.6
 
-RUN pip install awscli
+RUN apt-get update
+
+RUN pip3 install awscli
+RUN apt-get install -y groff
+
 
